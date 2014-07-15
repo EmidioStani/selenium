@@ -8,9 +8,7 @@
     <property name="build.dir" location="target" />
     <property name="build.test.dir" location="${build.dir}/test-classes" />
 
-    <property name="lib.dir" location="C:/Users/StaniE" />
-    <property name="mvn.dir" location="${lib.dir}/.m2/repository" />
-    <property name="dod.dir" location="${lib.dir}/Downloads" />
+    <property name="lib.dir" location="lib" />
 
     <!-- Variables used for JUnit testing -->
 
@@ -18,9 +16,9 @@
 
     <!-- Define the classpath which includes the junit.jar and the classes after compiling-->
     <path id="junit.class.path">
-        <pathelement location="${mvn.dir}/junit/junit/4.11junit-4.11.jar" />
-        <pathelement location="${mvn.dir}/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" />
-        <pathelement location="${dod.dir}/selenium-server-standalone-2.42.2.jar" />
+        <pathelement location="${lib.dir}/4.11junit-4.11.jar" />
+        <pathelement location="${lib.dir}/hamcrest-core-1.3.jar" />
+        <pathelement location="${lib.dir}/selenium-server-standalone-2.42.2.jar" />
         <pathelement location="${build.dir}" />
     </path>
 
