@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<project name="JUNIT" default="main" basedir=".">
+    <!-- Sets variables which can later be used. -->
+    <!-- The value of a property is accessed via ${} -->
+    <property name="src.dir" location="src" />
+    <property name="test.dir" location="test" />
+
+    <property name="build.dir" location="target" />
+    <property name="build.test.dir" location="${build.dir}/test-classes" />
+
+    <property name="lib.dir" location="C:/Users/StaniE" />
+    <property name="mvn.dir" location="${lib.dir}/.m2/repository" />
+    <property name="dod.dir" location="${lib.dir}/Downloads" />
+
+    <!-- Variables used for JUnit testing -->
+
+    <property name="test.report.dir" location="${build.dir}/testreport" />
+
+    <!-- Define the classpath which includes the junit.jar and the classes after compiling-->
+    <path id="junit.class.path">
+        <pathelement location="${mvn.dir}/junit/junit/4.11junit-4.11.jar" />
+        <pathelement location="${mvn.dir}/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" />
+        <pathelement location="${dod.dir}/selenium-server-standalone-2.42.2.jar" />
+        <pathelement location="${build.dir}" />
+    </path>
+
+
+    <!-- Deletes the existing build, docs and dist directory-->
+    <target name="clean">
+        <delete dir="${build.dir}" />
+        <delete dir="${test.report.dir}" />
+    </target>
+
+    <!-- Creates the  build, docs and dist directory-->
+    <target name="makedir">
+        <mkdir dir="${build.dir}" />
+        <mkdir dir="${build.test.dir}" />
+        <mkdir dir="${test.report.dir}" />
+    </target>
+
+    <!-- Compiles the java code (including the usage of library for JUnit -->
+    <target name="compile" depends="clean, makedir">
+        <javac srcdir="${src.dir}" destdir="${build.dir}">
+            <classpath refid="junit.class.path" />
+        </javac>
+
+        <javac srcdir="${test.dir}" destdir="${build.test.dir}">
+            <classpath refid="junit.class.path" />
+        </javac>
+
+    </target>
+
+    <!-- Run the JUnit Tests -->
+    <!-- Output is XML, could also be plain-->
+    <target name="junit" depends="compile">
+        <junit printsummary="on" fork="true" haltonfailure="yes">
+            <classpath refid="junit.class.path" />
+            <classpath>
+                <pathelement location="${build.test.dir}"/>
+            </classpath>
+            <formatter type="xml" />
+            <batchtest todir="${test.report.dir}">
+                <fileset dir="${test.dir}">
+                    <include name="**/*TestSuite.java" />
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+    <target name="main" depends="compile, junit">
+        <description>Main target</description>
+    </target>
+
+</project>
