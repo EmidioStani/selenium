@@ -1,4 +1,4 @@
-package org.openqa.selenium.test;
+package org.openqa.selenium.tests;
 
 import org.junit.After;
 import org.junit.Assert;

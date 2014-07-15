@@ -23,7 +23,7 @@
     <!-- Deletes the existing build, docs and dist directory-->
     <target name="clean">
         <delete dir="${build.dir}" />
-        <delete dir="${build.dir}" />
+        <delete dir="${build.test.dir}" />
         <delete dir="${doc.report.dir}" />
         <delete dir="${junit.report.dir}" />
     </target>
@@ -77,7 +77,7 @@
             <formatter type="xml" />
             <batchtest todir="${junit.report.dir}">
                 <fileset dir="${test.dir}">
-                    <include name="**/*.TestSuite.java" />
+                    <include name="**/**/TestSuite.java" />
                 </fileset>
             </batchtest>
         </junit>

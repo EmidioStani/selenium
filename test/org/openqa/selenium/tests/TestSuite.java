@@ -1,4 +1,4 @@
-package org.openqa.selenium.test;
+package org.openqa.selenium.tests;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

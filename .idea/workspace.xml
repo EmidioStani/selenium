@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="359af7f6-76f2-4f4c-8e6a-273264e5f2c4" name="Default" comment="Fixes #3 - moved in report folder and added javadoc">
-      <change type="MOVED" beforePath="C:\Users\StaniE\IdeaProjects\selenium3\src\org\openqa\selenium\example\GoogleSearchPage.java" afterPath="$PROJECT_DIR$/src/org/openqa/selenium/pageobjects/GoogleSearchPage.java" />
-      <change type="MOVED" beforePath="C:\Users\StaniE\IdeaProjects\selenium3\src\org\openqa\selenium\example\ResultPage.java" afterPath="$PROJECT_DIR$/src/org/openqa/selenium/pageobjects/ResultPage.java" />
-      <change type="MOVED" beforePath="C:\Users\StaniE\IdeaProjects\selenium3\src\org\openqa\selenium\example\WikipediaPage.java" afterPath="$PROJECT_DIR$/src/org/openqa/selenium/pageobjects/WikipediaPage.java" />
-      <change type="MOVED" beforePath="C:\Users\StaniE\IdeaProjects\selenium3\test\TestGoogleResult.java" afterPath="$PROJECT_DIR$/test/org/openqa/selenium/test/TestGoogleResult.java" />
-      <change type="MOVED" beforePath="C:\Users\StaniE\IdeaProjects\selenium3\test\TestSuite.java" afterPath="$PROJECT_DIR$/test/org/openqa/selenium/test/TestSuite.java" />
-      <change type="MOVED" beforePath="C:\Users\StaniE\IdeaProjects\selenium3\test\TestWikipediaResult.java" afterPath="$PROJECT_DIR$/test/org/openqa/selenium/test/TestWikipediaResult.java" />
+    <list default="true" id="359af7f6-76f2-4f4c-8e6a-273264e5f2c4" name="Default" comment="">
+      <change type="MOVED" beforePath="C:\Users\StaniE\IdeaProjects\selenium3\test\org\openqa\selenium\test\TestGoogleResult.java" afterPath="$PROJECT_DIR$/test/org/openqa/selenium/tests/TestGoogleResult.java" />
+      <change type="MOVED" beforePath="C:\Users\StaniE\IdeaProjects\selenium3\test\org\openqa\selenium\test\TestSuite.java" afterPath="$PROJECT_DIR$/test/org/openqa/selenium/tests/TestSuite.java" />
+      <change type="MOVED" beforePath="C:\Users\StaniE\IdeaProjects\selenium3\test\org\openqa\selenium\test\TestWikipediaResult.java" afterPath="$PROJECT_DIR$/test/org/openqa/selenium/tests/TestWikipediaResult.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -37,8 +34,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.2682353" vertical-offset="804" max-vertical-offset="1615">
+              <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TestSuite.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestSuite.java">
+        <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
               <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -49,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResultPage.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ResultPage.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/openqa/selenium/pageobjects/ResultPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42045453" vertical-offset="801" max-vertical-offset="1241">
-              <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="801" max-vertical-offset="1241">
+              <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -64,6 +71,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="476">
               <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestGoogleResult.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestGoogleResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="510">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,8 +109,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/test/TestWikipediaResult.java" />
         <option value="$PROJECT_DIR$/src/org/openqa/selenium/example/ResultPage.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/test/org/openqa/selenium/test/TestSuite.java" />
+        <option value="$PROJECT_DIR$/build.xml" />
       </list>
     </option>
   </component>
@@ -152,6 +169,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="selenium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="selenium3" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="selenium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="selenium3" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -188,8 +233,8 @@
       <module name="selenium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.openqa.selenium.test" />
-      <option name="MAIN_CLASS_NAME" value="org.openqa.selenium.test.TestGoogleResult" />
+      <option name="PACKAGE_NAME" value="org.openqa.selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.openqa.selenium.tests.TestGoogleResult" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -210,8 +255,8 @@
       <module name="selenium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.openqa.selenium.test" />
-      <option name="MAIN_CLASS_NAME" value="org.openqa.selenium.test.TestWikipediaResult" />
+      <option name="PACKAGE_NAME" value="org.openqa.selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.openqa.selenium.tests.TestWikipediaResult" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -405,8 +450,8 @@
       <module name="selenium" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.openqa.selenium.test" />
-      <option name="MAIN_CLASS_NAME" value="org.openqa.selenium.test.TestSuite" />
+      <option name="PACKAGE_NAME" value="org.openqa.selenium.tests" />
+      <option name="MAIN_CLASS_NAME" value="org.openqa.selenium.tests.TestSuite" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -494,7 +539,11 @@
       <option name="type" value="BUG" />
       <updated>1405431566050</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixes #3 - moved in report folder and added javadoc">
+      <created>1405431735033</created>
+      <updated>1405431735033</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <option name="updateEnabled" value="false" />
     <option name="updateInterval" value="1" />
     <option name="createChangelist" value="false" />
@@ -605,7 +654,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestGoogleResult.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestGoogleResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="765">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
@@ -613,7 +662,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestSuite.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
           <caret line="8" column="1" selection-start-line="7" selection-start-column="13" selection-end-line="8" selection-end-column="1" />
@@ -631,7 +680,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestWikipediaResult.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestWikipediaResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="782">
           <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
@@ -663,7 +712,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestGoogleResult.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestGoogleResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="765">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
@@ -671,7 +720,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestSuite.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
           <caret line="8" column="1" selection-start-line="7" selection-start-column="13" selection-end-line="8" selection-end-column="1" />
@@ -681,7 +730,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestWikipediaResult.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestWikipediaResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="782">
           <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
@@ -713,7 +762,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestGoogleResult.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestGoogleResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="765">
           <caret line="37" column="74" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
@@ -721,7 +770,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestSuite.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
           <caret line="8" column="1" selection-start-line="7" selection-start-column="13" selection-end-line="8" selection-end-column="1" />
@@ -731,7 +780,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestWikipediaResult.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestWikipediaResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="782">
           <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
@@ -763,7 +812,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestGoogleResult.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestGoogleResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="765">
           <caret line="37" column="74" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
@@ -771,7 +820,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestSuite.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="238">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -781,7 +830,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestWikipediaResult.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestWikipediaResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="782">
           <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
@@ -813,7 +862,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestGoogleResult.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestGoogleResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="765">
           <caret line="37" column="74" selection-start-line="37" selection-start-column="74" selection-end-line="37" selection-end-column="74" />
@@ -821,7 +870,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestSuite.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="238">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -831,7 +880,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestWikipediaResult.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestWikipediaResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="782">
           <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
@@ -847,7 +896,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestGoogleResult.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestGoogleResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="39" max-vertical-offset="578">
           <caret line="18" column="5" selection-start-line="9" selection-start-column="3" selection-end-line="18" selection-end-column="5" />
@@ -863,7 +912,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestWikipediaResult.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestWikipediaResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.58536583" vertical-offset="331" max-vertical-offset="782">
           <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
@@ -871,23 +920,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestGoogleResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13686535" vertical-offset="57" max-vertical-offset="510">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.96468" vertical-offset="0" max-vertical-offset="1615">
-          <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/test/TestSuite.java">
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -907,8 +940,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/openqa/selenium/pageobjects/ResultPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42045453" vertical-offset="801" max-vertical-offset="1241">
-          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="801" max-vertical-offset="1241">
+          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/org/openqa/selenium/tests/TestGoogleResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="510">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2682353" vertical-offset="804" max-vertical-offset="1615">
+          <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
           <folding />
         </state>
       </provider>
