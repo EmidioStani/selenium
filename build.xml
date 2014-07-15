@@ -4,15 +4,12 @@
     <!-- The value of a property is accessed via ${} -->
     <property name="src.dir" location="src" />
     <property name="test.dir" location="test" />
-
     <property name="build.dir" location="target" />
     <property name="build.test.dir" location="${build.dir}/test-classes" />
-
     <property name="lib.dir" location="lib" />
-
-    <!-- Variables used for JUnit testing -->
-
-    <property name="test.report.dir" location="${build.dir}/testreport" />
+    <property name="report.dir" location="${build.dir}/reports" />
+    <property name="doc.report.dir" location="${report.dir}/javadoc" />
+    <property name="junit.report.dir" location="${report.dir}/testreport" />
 
     <!-- Define the classpath which includes the junit.jar and the classes after compiling-->
     <path id="junit.class.path">
@@ -26,14 +23,17 @@
     <!-- Deletes the existing build, docs and dist directory-->
     <target name="clean">
         <delete dir="${build.dir}" />
-        <delete dir="${test.report.dir}" />
+        <delete dir="${build.dir}" />
+        <delete dir="${doc.report.dir}" />
+        <delete dir="${junit.report.dir}" />
     </target>
 
     <!-- Creates the  build, docs and dist directory-->
     <target name="makedir">
         <mkdir dir="${build.dir}" />
         <mkdir dir="${build.test.dir}" />
-        <mkdir dir="${test.report.dir}" />
+        <mkdir dir="${doc.report.dir}" />
+        <mkdir dir="${junit.report.dir}" />
     </target>
 
     <!-- Compiles the java code (including the usage of library for JUnit -->
@@ -48,6 +48,24 @@
 
     </target>
 
+    <!-- Creates Javadoc -->
+    <target name="docs" depends="compile">
+        <javadoc packagenames="src" sourcepath="${src.dir}" destdir="${doc.report.dir}">
+            <!-- Define which files / directory should get included, we include all -->
+            <fileset dir="${src.dir}">
+            <include name="**" />
+            </fileset>
+            <fileset dir="${test.dir}">
+                <include name="**" />
+            </fileset>
+            <classpath>
+                <fileset dir="${lib.dir}">
+                    <include name="**"/>
+                </fileset>
+            </classpath>
+        </javadoc>
+    </target>
+
     <!-- Run the JUnit Tests -->
     <!-- Output is XML, could also be plain-->
     <target name="junit" depends="compile">
@@ -57,15 +75,15 @@
                 <pathelement location="${build.test.dir}"/>
             </classpath>
             <formatter type="xml" />
-            <batchtest todir="${test.report.dir}">
+            <batchtest todir="${junit.report.dir}">
                 <fileset dir="${test.dir}">
-                    <include name="**/*TestSuite.java" />
+                    <include name="**/*.TestSuite.java" />
                 </fileset>
             </batchtest>
         </junit>
     </target>
 
-    <target name="main" depends="compile, junit">
+    <target name="main" depends="compile, docs, junit">
         <description>Main target</description>
     </target>
 

@@ -1,21 +1,16 @@
+package org.openqa.selenium.test;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.example.GoogleSearchPage;
-import org.openqa.selenium.example.ResultPage;
-import org.openqa.selenium.example.WikipediaPage;
+import org.openqa.selenium.pageobjects.GoogleSearchPage;
+import org.openqa.selenium.pageobjects.ResultPage;
+import org.openqa.selenium.pageobjects.WikipediaPage;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.openqa.selenium.support.PageFactory;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
-public class TestGoogleResult {
+public class TestWikipediaResult {
 
     private FirefoxDriver driver;
 
@@ -35,6 +30,7 @@ public class TestGoogleResult {
         GoogleSearchPage homePage = GoogleSearchPage.navigateTo(driver);
         String keystring = "Cheese";
         ResultPage resultsPage = homePage.searchFor(keystring);
-        Assert.assertTrue(resultsPage.allResultsContainString(keystring));
+        WikipediaPage result = resultsPage.clickOnTheResult(1);
+        Assert.assertTrue(result.getHeaderPage().equals(keystring));
     }
 }
